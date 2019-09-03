@@ -67,6 +67,10 @@ public class MemoController extends HttpServlet {
 			String page="/memo/detailView.jsp";
   			RequestDispatcher rd=request.getRequestDispatcher(page);
   			rd.forward(request, response);
+		}else if(url.indexOf("edit.mo") != -1) {
+			System.out.println("memo-edit 처리 페이지");
+			int no=Integer.parseInt(request.getParameter("no"));
+			String writer = request.
 		}
 	}
 

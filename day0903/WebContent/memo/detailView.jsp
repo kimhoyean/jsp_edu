@@ -36,6 +36,11 @@ $(function(){
 		//history.go(-1);
 		location.href="../../memo/memo.jsp";
 	});
+	$("#btn-submit").click(function(){
+			$("#detain-from").attr("action","/memo_servlet")
+			$("#detain-from").attr("method","post");
+			$("#detain-form").submit();
+	});
 });
 </script>
 </head>
