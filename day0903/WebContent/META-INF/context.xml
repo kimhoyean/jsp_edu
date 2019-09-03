@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<!-- DBCP(DataBase Connection Pool) 설정 -->
+ <Resource name="jdbc/OracleDB" 
+ 	auth="Container"
+	type="javax.sql.DataSource" 
+	driverClassName="oracle.jdbc.OracleDriver"
+	url="jdbc:oracle:thin:@192.168.0.17:1521:orcl" 
+	username="nick"
+	password="1234" 
+	maxTotal="20" 
+	maxIdle="10" 
+	maxWaitMillis="-1" />
+    
+</Context>
